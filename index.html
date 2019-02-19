@@ -20,8 +20,8 @@
             <i class="fas fa-bars"></i>
           </div>
         </div>
-        <nav>
-          <div class="nav__menu-bar positioning">
+        <div id="navbar" class="nav__menu-bar positioning">
+          <nav>
             <button
               class="nav__menu-bar__menu-button"
               onclick="window.location.href ='#overview'"
@@ -52,9 +52,10 @@
             >
               Keep up to date
             </button>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </div>
+
       <div class="header__header-content  positioning" id="overview">
         <div
           class="header__header-content--lower-opacity header__header-content__details"
@@ -407,10 +408,12 @@
         <div class="keep-up-to-date__content">
           <h2>Keep up to date</h2>
           <div class="teal-line"></div>
-          <p>
-            Learn more about Assassin's Creed Odyssey and be the first to know
-            about special offers and discounts.
-          </p>
+          <div class="keep-up-to-date__text ">
+            <p>
+              Learn more about Assassin's Creed Odyssey and be the first to know
+              about special offers and discounts.
+            </p>
+          </div>
           <div>
             <form class="keep-up-to-date__form">
               <input
