@@ -205,6 +205,12 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .nav__menu-bar__menu-button {
+    font-size: 10px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .hide-when-mobile {
     display: none;
@@ -396,6 +402,13 @@ button {
   margin-right: 5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .radio-button-container {
+    padding-left: 20px;
+    margin-right: 2px;
+  }
+}
+
 /* Hide the browser's default radio button */
 .radio-button-container .radio-button {
   position: absolute;
@@ -423,6 +436,13 @@ button {
   .checkmark {
     height: 10px;
     width: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .checkmark {
+    height: 8px;
+    width: 8px;
   }
 }
 
