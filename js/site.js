@@ -107,12 +107,8 @@ function fadeInImages() {
 }
 
 function radioButtonClickedMobile(radioButton) {
-  var url = "content/images/" + radioButton.value + ".png";
-  var background =
-    "linear-gradient(rgba(67, 70, 75, 0.1), #282536),url(" +
-    url +
-    "), center, no-repeat";
-  document.getElementById("headerMobile").style.background = background;
+  var url = "url(content/images/" + radioButton.value + ".png)";
+  document.getElementById("headerMobile").style.backgroundImage = url;
   document.getElementById("headerMobile").style.backgroundSize = "cover";
 }
 

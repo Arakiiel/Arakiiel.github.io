@@ -12,8 +12,8 @@
 
   <body>
     <div class="header">
-      <div class="header--mobile" id="headerMobile">
-        <div class="site-name positioning">
+      <div class="header__menu" id="headerMobile">
+        <div class="header__menu__site-name positioning">
           <div>
             <h3>BNG</h3>
           </div>
@@ -21,34 +21,34 @@
             <i class="fas fa-bars"></i>
           </div>
         </div>
-        <div id="navbar" class="nav__menu-bar positioning">
+        <div id="navbar" class="header__menu__bar positioning">
           <nav>
             <button
-              class="nav__menu-bar__menu-button"
+              class="header__menu__bar__button"
               onclick="window.location.href ='#overview'"
             >
               Overview
             </button>
             <button
-              class="nav__menu-bar__menu-button hide-when-mobile"
+              class="header__menu__bar__button hide-when-mobile"
               onclick="window.location.href ='#videosAndScreenshots'"
             >
               Videos and Screenshots
             </button>
             <button
-              class="nav__menu-bar__menu-button"
+              class="header__menu__bar__button"
               onclick="window.location.href ='#description'"
             >
               Description
             </button>
             <button
-              class="nav__menu-bar__menu-button hide-when-desktop"
+              class="header__menu__bar__button hide-when-desktop"
               onclick="window.location.href ='#preorder'"
             >
               Pre order
             </button>
             <button
-              class="nav__menu-bar__menu-button"
+              class="header__menu__bar__button"
               onclick="window.location.href ='#keepUpTodate'"
             >
               Keep up to date
@@ -57,176 +57,206 @@
         </div>
       </div>
 
-      <div class="header__header-content  positioning" id="overview">
+      <div class="header__content  positioning" id="overview">
         <div
-          class="header__header-content--lower-opacity header__header-content__details"
+          class="header__content__details--lower-opacity header__content__details"
         >
-          <div class="videos-and-screenshots__radio-buttons hide-when-desktop">
-            <label class="radio-button-container">
+          <div class="screenshots__radio-buttons hide-when-desktop">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile1"
                 name="screenshotMobile"
                 value="screenshot1"
                 checked="checked"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile2"
                 name="screenshotMobile"
                 value="screenshot2"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile3"
                 name="screenshotMobile"
                 value="screenshot3"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile4"
                 name="screenshotMobile"
                 value="screenshot4"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile5"
                 name="screenshotMobile"
                 value="screenshot5"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile6"
                 name="screenshotMobile"
                 value="screenshot6"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile7"
                 name="screenshotMobile"
                 value="screenshot7"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile8"
                 name="screenshotMobile"
                 value="screenshot8"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile9"
                 name="screenshotMobile"
                 value="screenshot9"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile10"
                 name="screenshotMobile"
                 value="screenshot10"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile11"
                 name="screenshotMobile"
                 value="screenshot11"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile12"
                 name="screenshotMobile"
                 value="screenshot12"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile13"
                 name="screenshotMobile"
                 value="screenshot13"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile14"
                 name="screenshotMobile"
                 value="screenshot14"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
-            <label class="radio-button-container">
+            <label class="screenshots__radio-buttons__radio-button-container">
               <input
                 type="radio"
                 id="screenshotMobile15"
                 name="screenshotMobile"
                 value="screenshot15"
-                class="radio-button"
+                class="screenshots__radio-buttons__radio-button-container__radio-button"
                 onclick="radioButtonClickedMobile(this)"
               />
-              <span class="checkmark"></span>
+              <span
+                class="screenshots__radio-buttons__radio-button-container__checkmark"
+              ></span>
             </label>
           </div>
 
@@ -240,12 +270,12 @@
             <i class="fab fa-windows"></i>
           </div>
         </div>
-        <div class="game-title">
+        <div class="header__content__game-title">
           Assassin's Creed Odyssey
         </div>
         <div class="blue-line"></div>
         <div>
-          <button class="pre-order-button">
+          <button class="header__content__pre-order-button">
             Pre-order now
           </button>
         </div>
@@ -255,69 +285,75 @@
     <main>
       <div
         id="videosAndScreenshots"
-        class="videos-and-screenshots positioning hide-when-mobile"
+        class="screenshots positioning hide-when-mobile"
       >
         <h2>Videos and Screenshots</h2>
         <div class="teal-line"></div>
 
-        <div class="screenshot-group">
-          <div class="screenshot">
+        <div class="screenshots__screenshot-group">
+          <div class="screenshots__screenshot-group__screenshot">
             <img id="image1" src="content\images\screenshot1.png" alt="" />
           </div>
-          <div class="screenshot">
+          <div class="screenshots__screenshot-group__screenshot">
             <img id="image2" src="content\images\screenshot2.png" alt="" />
           </div>
-          <div class="screenshot">
+          <div class="screenshots__screenshot-group__screenshot">
             <img id="image3" src="content\images\screenshot3.png" alt="" />
           </div>
-          <div class="screenshot">
+          <div class="screenshots__screenshot-group__screenshot">
             <img id="image4" src="content\images\screenshot4.png" alt="" />
           </div>
-          <div class="screenshot">
+          <div class="screenshots__screenshot-group__screenshot">
             <img id="image5" src="content\images\screenshot5.png" alt="" />
           </div>
         </div>
 
-        <div class="videos-and-screenshots__radio-buttons">
-          <label class="radio-button-container">
+        <div class="screenshots__radio-buttons">
+          <label class="screenshots__radio-buttons__radio-button-container">
             <input
               type="radio"
               id="screenshot1"
               name="screenshot"
               value="screenshot1"
               checked="checked"
-              class="radio-button"
+              class="screenshots__radio-buttons__radio-button-container__radio-button"
               onclick="radioButtonClicked(this)"
             />
-            <span class="checkmark"></span>
+            <span
+              class="screenshots__radio-buttons__radio-button-container__checkmark"
+            ></span>
           </label>
-          <label class="radio-button-container">
+          <label class="screenshots__radio-buttons__radio-button-container">
             <input
               type="radio"
               id="screenshot2"
               name="screenshot"
               value="screenshot2"
-              class="radio-button"
+              class="screenshots__radio-buttons__radio-button-container__radio-button"
               onclick="radioButtonClicked(this)"
             />
-            <span class="checkmark"></span>
+            <span
+              class="screenshots__radio-buttons__radio-button-container__checkmark"
+            ></span>
           </label>
-          <label class="radio-button-container">
+          <label class="screenshots__radio-buttons__radio-button-container">
             <input
               type="radio"
               id="screenshot3"
               name="screenshot"
               value="screenshot3"
-              class="radio-button"
+              class="screenshots__radio-buttons__radio-button-container__radio-button"
               onclick="radioButtonClicked(this)"
             />
-            <span class="checkmark"></span>
+            <span
+              class="screenshots__radio-buttons__radio-button-container__checkmark"
+            ></span>
           </label>
         </div>
       </div>
 
       <div class="description-and-preorder positioning">
-        <div class="description" id="description">
+        <div class="description-and-preorder__description" id="description">
           <h2>Description</h2>
           <div class="teal-line"></div>
           <p>
@@ -364,38 +400,44 @@
             Eye tracking features available with Tobii Eye Tracking.
           </p>
         </div>
-        <div class="pre-order" id="preorder">
-          <form class="pre-order__form">
+        <div class="description-and-preorder__pre-order" id="preorder">
+          <form class="description-and-preorder__pre-order__form">
             <h2>Pre-order now</h2>
             <div class="teal-line"></div>
             <h3>Standard edition</h3>
             <div>
-              <div class="pre-order__form__row">
+              <div class="description-and-preorder__pre-order__form__row">
                 <div>
                   <i class="fab fa-xbox"></i>
                   XBOX One edition
                 </div>
-                <div class="pre-order__form__row--blue">
+                <div
+                  class="description-and-preorder__pre-order__form__row--blue"
+                >
                   £49.99
                   <i class="fas fa-shopping-cart"></i>
                 </div>
               </div>
-              <div class="pre-order__form__row">
+              <div class="description-and-preorder__pre-order__form__row">
                 <div>
                   <i class="fab fa-playstation"></i>
                   PS4 Edition
                 </div>
-                <div class="pre-order__form__row--blue">
+                <div
+                  class="description-and-preorder__pre-order__form__row--blue"
+                >
                   £49.99
                   <i class="fas fa-shopping-cart"></i>
                 </div>
               </div>
-              <div class="pre-order__form__row">
+              <div class="description-and-preorder__pre-order__form__row">
                 <div>
                   <i class="fab fa-windows"></i>
                   PC Edition
                 </div>
-                <div class="pre-order__form__row--blue">
+                <div
+                  class="description-and-preorder__pre-order__form__row--blue"
+                >
                   £49.99
                   <i class="fas fa-shopping-cart"></i>
                 </div>

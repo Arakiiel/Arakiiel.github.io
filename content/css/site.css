@@ -38,125 +38,15 @@ p {
   margin-bottom: 20px;
 }
 
+input,
+button {
+  border-radius: 1px;
+}
+
 @media only screen and (max-width: 768px) {
   p {
     font-size: 14px;
   }
-}
-
-.header {
-  background: linear-gradient(rgba(67, 70, 75, 0.4), #282536),
-    url("../images/image1.png"), no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 250px;
-}
-
-@media only screen and (max-width: 768px) {
-  .header {
-    padding-bottom: 50px;
-    background: linear-gradient(rgba(67, 70, 75, 0.4), #282536);
-  }
-}
-@media only screen and (max-width: 768px) {
-  .header--mobile {
-    background: linear-gradient(rgba(67, 70, 75, 0.1), #282536),
-      url("../images/screenshot1.png"), no-repeat;
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .header--mobile {
-    background: linear-gradient(rgba(67, 70, 75, 0.4), #282536) !important;
-  }
-}
-
-.videos-and-screenshots {
-  padding-bottom: 150px;
-}
-
-.videos-and-screenshots__radio-buttons {
-  display: flex;
-  flex-direction: row;
-}
-@media only screen and (max-width: 768px) {
-  .videos-and-screenshots__radio-buttons {
-    padding-bottom: 10px;
-    justify-content: center;
-  }
-}
-
-.description-and-preorder {
-  background: linear-gradient(#282536, rgba(67, 70, 75, 0.6), #282536),
-    url("../images/image2.png"), no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  display: flex;
-}
-
-@media only screen and (min-width: 768px) {
-  .description-and-preorder {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .description-and-preorder {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .description {
-    width: 40%;
-  }
-}
-
-.pre-order {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-@media only screen and (min-width: 768px) {
-  .pre-order {
-    width: 40%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .pre-order {
-    align-items: center;
-  }
-}
-
-.pre-order__form {
-  background-color: #2b283a;
-  padding: 40px 40px 40px 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #000;
-  width: 80%;
-}
-
-.pre-order__form__row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 40px;
-  margin-top: 20px;
-  color: white;
-  border-bottom-style: solid;
-  border-bottom-width: 0.5px;
-  border-bottom-color: white;
-}
-
-.pre-order__form__row--blue {
-  color: #308ae2;
 }
 
 h2 {
@@ -166,78 +56,15 @@ h3 {
   color: white;
 }
 
-.nav__menu-bar {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: rgba(40, 37, 54, 0.7);
-  margin-bottom: 200px;
-  /* position:fixed; */
-}
-
-@media only screen and (max-width: 768px) {
-  .nav__menu-bar {
-    background-color: rgba(40, 37, 54);
-    margin-top: 200px;
-    margin-bottom: 50px;
-  }
-}
-
-.nav__menu-bar__menu-button {
-  font-weight: normal;
-  height: 60px;
-  background-color: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom-color: transparent;
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-  border-radius: 1px;
-  margin-right: 100px;
-}
-
-@media only screen and (max-width: 768px) {
-  .nav__menu-bar__menu-button {
-    height: 60px;
-    margin-right: 20px;
-    font-size: 12px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .nav__menu-bar__menu-button {
-    font-size: 10px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .hide-when-mobile {
-    display: none;
+    display: none !important;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hide-when-desktop {
-    display: none;
-  }
-}
-
-.nav__menu-bar__menu-button:hover {
-  border-bottom-color: #23bbbe;
-}
-
-.header__header-content {
-  display: flex;
-  flex-direction: column;
-  color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  .header__header-content {
-    align-content: center;
-    justify-content: center;
-    text-align: center;
+    display: none !important;
   }
 }
 
@@ -264,20 +91,288 @@ h3 {
   height: 20px;
 }
 
-.header__header-content--lower-opacity {
+.header {
+  background: linear-gradient(rgba(67, 70, 75, 0.4), #282536),
+    url("../images/image1.png"), no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 250px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding-bottom: 50px;
+    background: linear-gradient(rgba(67, 70, 75, 0.4), #282536);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__menu {
+    background-image: url("../images/screenshot1.png");
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header__menu {
+    background: linear-gradient(rgba(59, 70, 88, 0.4), #282536) !important;
+  }
+}
+
+.header__menu__site-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  opacity: 0.7;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__menu__site-name {
+    background-color: rgba(40, 37, 54, 0.8);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.header__menu__bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgba(40, 37, 54, 0.7);
+  margin-bottom: 200px;
+  /* position:fixed; */
+}
+
+@media only screen and (max-width: 768px) {
+  .header__menu__bar {
+    background-color: rgba(40, 37, 54);
+    margin-top: 200px;
+    margin-bottom: 50px;
+  }
+}
+
+.header__menu__bar__button {
+  font-weight: normal;
+  height: 60px;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: transparent;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-radius: 1px;
+  margin-right: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__menu__bar__button {
+    height: 60px;
+    margin-right: 20px;
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header__menu__bar__button {
+    font-size: 10px;
+  }
+}
+
+.header__menu__bar__button:hover {
+  border-bottom-color: #23bbbe;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .header__content {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.header__content__details--lower-opacity {
   opacity: 0.7;
 }
 
-.header__header-content__details {
+.header__content__details {
   display: flex;
   flex-direction: row;
 }
 
 @media only screen and (max-width: 768px) {
-  .header__header-content__details {
+  .header__content__details {
     display: flex;
     flex-direction: column;
   }
+}
+
+.screenshots {
+  padding-bottom: 150px;
+}
+
+.screenshots__radio-buttons {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+  .screenshots__radio-buttons {
+    padding-bottom: 10px;
+    justify-content: center;
+  }
+}
+
+.screenshots__radio-buttons__radio-button-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .screenshots__radio-buttons__radio-button-container {
+    padding-left: 20px;
+    margin-right: 2px;
+  }
+}
+
+/* Hide the browser's default radio button */
+.screenshots__radio-buttons__radio-button-container
+  .screenshots__radio-buttons__radio-button-container__radio-button {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.screenshots__radio-buttons__radio-button-container:hover
+  .screenshots__radio-buttons__radio-button-container__radio-button
+  ~ .screenshots__radio-buttons__radio-button-container__checkmark {
+  background-color: rgb(35, 187, 190, 0.6);
+}
+
+.screenshots__radio-buttons__radio-button-container
+  .screenshots__radio-buttons__radio-button-container__radio-button:checked
+  ~ .screenshots__radio-buttons__radio-button-container__checkmark {
+  background-color: #23bbbe;
+  border-color: #23bbbe;
+}
+
+/* Create a custom radio button */
+.screenshots__radio-buttons__radio-button-container__checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #282536;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .screenshots__radio-buttons__radio-button-container__checkmark {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .screenshots__radio-buttons__radio-button-container__checkmark {
+    height: 8px;
+    width: 8px;
+  }
+}
+
+.description-and-preorder {
+  background: linear-gradient(#282536, rgba(67, 70, 75, 0.6), #282536),
+    url("../images/image2.png"), no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .description-and-preorder {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .description-and-preorder {
+    background: linear-gradient(#282536, rgba(67, 70, 75, 0.6), #282536);
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .description-and-preorder__description {
+    width: 40%;
+  }
+}
+
+.description-and-preorder__pre-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .description-and-preorder__pre-order {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .description-and-preorder__pre-order {
+    align-items: center;
+  }
+}
+
+.description-and-preorder__pre-order__form {
+  background-color: #2b283a;
+  padding: 40px 40px 40px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;
+  width: 80%;
+}
+
+.description-and-preorder__pre-order__form__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40px;
+  margin-top: 20px;
+  color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+  border-bottom-color: white;
+}
+
+.description-and-preorder__pre-order__form__row--blue {
+  color: #308ae2;
 }
 
 button {
@@ -289,12 +384,12 @@ button {
   border-radius: 4px;
 }
 
-.pre-order-button {
+.header__content__pre-order-button {
   font-size: 16px;
   padding: 15px 40px 15px 40px;
 }
 
-.pre-order-button:hover,
+.header__content__pre-order-button:hover,
 .keep-up-to-date___form__button:hover {
   background-color: #2979c6;
 }
@@ -343,31 +438,13 @@ button {
   opacity: 1;
 }
 
-.site-name {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  color: white;
-  opacity: 0.7;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-@media only screen and (max-width: 768px) {
-  .site-name {
-    background-color: rgba(40, 37, 54, 0.8);
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-}
-
-.game-title {
+.header__content__game-title {
   font-weight: semibold;
   font-size: 40px;
 }
 
 @media only screen and (max-width: 768px) {
-  .game-title {
+  .header__content__game-title {
     font-weight: regular;
     font-size: 25px;
   }
@@ -387,75 +464,7 @@ button {
   }
 }
 
-/* Customize the label (the container) */
-.radio-button-container {
-  display: block;
-  position: relative;
-  padding-left: 25px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  margin-right: 5px;
-}
-
-@media only screen and (max-width: 600px) {
-  .radio-button-container {
-    padding-left: 20px;
-    margin-right: 2px;
-  }
-}
-
-/* Hide the browser's default radio button */
-.radio-button-container .radio-button {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  background-color: #282536;
-  border-radius: 50%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-}
-
-@media only screen and (max-width: 768px) {
-  .checkmark {
-    height: 10px;
-    width: 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .checkmark {
-    height: 8px;
-    width: 8px;
-  }
-}
-
-.radio-button-container:hover .radio-button ~ .checkmark {
-  background-color: rgb(35, 187, 190, 0.6);
-}
-
-.radio-button-container .radio-button:checked ~ .checkmark {
-  background-color: #23bbbe;
-  border-color: #23bbbe;
-}
-
-.screenshot-group {
+.screenshots__screenshot-group {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -467,7 +476,7 @@ img {
   max-height: 100%;
 }
 
-.screenshot {
+.screenshots__screenshot-group__screenshot {
   height: 140px;
 }
 
@@ -478,19 +487,19 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-  .stickyAdded + .header__header-content {
+  .stickyAdded + .header__content {
     padding-top: 260px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .stickyAdded + .header__header-content {
+  .stickyAdded + .header__content {
     padding-top: 310px;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .sticky.nav__menu-bar {
+  .sticky.header__menu__bar {
     margin-top: 0px;
   }
 }
